@@ -1,0 +1,140 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'poppins';
+    src: url(./Poppins-Regular.ttf);
+}
+body{
+    min-height: 100vh;
+    font-family: 'poppins';
+    background-color: royalblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 90vw;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+}
+.header, .question-container, .footer{
+    padding: 1rem;
+}
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: .5rem;
+    align-items: center;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.header h1{
+    font-size: 1.1rem;
+}
+.counter{
+    padding: .625rem 1rem;
+    background-color: rgb(202, 214, 247);
+    color: rgb(17, 17, 92);
+    border-radius: 4px;
+}
+.counter span{
+    background-color: black;
+    color: white;
+    padding: .3125rem .6rem;
+    border-radius: 4px;
+}
+.question-container{
+    margin-top: 1.5rem;
+}
+.question-container h1{
+    font-size: 1.3rem;
+    margin-bottom: .4rem;
+}
+.answers-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+.answers-container article{
+    padding: .625rem 1rem;
+    background-color: rgb(227, 239, 243);
+    margin-bottom: .8rem;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.correct{
+    color: rgb(1, 36, 1);
+    background-color: lightgreen !important;
+}
+.wrong{
+    color: darkred;
+    background-color: rgb(255, 188, 188) !important;
+}
+.answers-container article > div{
+    width: 30px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.correct > .correct-icon{
+    display: flex !important;
+    border-color: rgb(1, 36, 1) !important;
+}
+.wrong .wrong-icon{
+    display: flex;
+    border-color: darkred;
+}
+.footer{
+    border-top: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn{
+    padding: .625rem 1rem;
+    background-color: royalblue;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+}
+.next-btn:active{
+    transform: scale(.98);
+}
+.test-ended{
+    padding: 1rem;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+}
+.test-ended h3{
+    font-size: 1.5rem;
+}
+.test-ended p span{
+    color: rgb(14, 54, 235);
+    font-weight: bold;
+}
+.test-ended .btn{
+    margin-top: .625rem;
+}
+.test-ended .time{
+    margin-top: .625rem;
+}
+.open-test-ended-container{
+    display: flex;
+}

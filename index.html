@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="active-container">
+            <header class="header">
+                <h1>Awesome Quiz Application</h1>
+                <div class="counter">
+                    <p>Time Used: <span class="seconds">08</span></p>
+                </div>
+            </header>
+
+            <main class="question-container">
+                <h1><span>1.</span> What does HTML stand for?</h1>
+                <div class="answers-container">
+                    
+                </div>
+            </main>
+
+            <footer class="footer">
+                <p class="questions-count">1 of 5 Questions</p>
+                <button class="btn next-btn">Next Que</button>
+            </footer>
+        </div>
+
+        <!-- display when quiz has ended -->
+        <div class="test-ended">
+            <h3>Quiz Ended</h3>
+            <p>Your Score is <span class="score">4/5</span></p>
+            <button class="btn restart-btn">Restart</button>
+            <p class="time">Time Used : 0 seconds</p>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
